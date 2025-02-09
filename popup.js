@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const resultDisplay = document.getElementById("result");
 
     const units = {
-        currency: ["USD", "EUR", "GBP", "JPY"],
+        currency: ["USD", "CNY", "EUR", "GBP", "JPY"],
         length: ["meters", "kilometers", "miles", "feet"],
         weight: ["grams", "kilograms", "pounds", "ounces"]
     };
