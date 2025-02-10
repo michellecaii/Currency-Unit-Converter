@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Converter</title>
     <style>
-        body { font-family: Arial, sans-serif; width: 250px; padding: 10px; }
-        select, input, button { width: 100%; margin-top: 5px; padding: 8px; }
+        body {
+            font-family: Arial, sans-serif;
+            width: 320px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h3 {
+            text-align: center;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        select, input, button {
+            width: 100%;
+            margin-top: 8px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+        }
+
+        input {
+            background: #fff;
+        }
+
+        button {
+            background: #007BFF;
+            color: white;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        h4 {
+            text-align: center;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        #result {
+            font-size: 18px;
+            font-weight: bold;
+            color: #28A745;
+        }
     </style>
 </head>
 <body>
-    <h3>Currency & Unit Converter</h3>
-    <select id="conversion-type">
-        <option value="currency">Currency</option>
-        <option value="length">Length</option>
-        <option value="weight">Weight</option>
-    </select>
-    
-    <input type="number" id="amount" placeholder="Enter value">
-    
-    <select id="from-unit"></select>
-    <select id="to-unit"></select>
-    
-    <button id="convert">Convert</button>
-    
-    <h4>Result: <span id="result">0</span></h4>
+    <div class="container">
+        <h3>Currency & Unit Converter</h3>
+        <select id="conversion-type">
+            <option value="currency">Currency</option>
+            <option value="length">Length</option>
+            <option value="weight">Weight</option>
+        </select>
+        
+        <input type="number" id="amount" placeholder="Enter value">
+        
+        <select id="from-unit"></select>
+        <select id="to-unit"></select>
+        
+        <button id="convert">Convert</button>
+        
+        <h4>Result: <span id="result">0</span></h4>
+    </div>
 
     <script src="popup.js"></script>
 </body>
-</html>

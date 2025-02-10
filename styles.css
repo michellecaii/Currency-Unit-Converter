@@ -1,0 +1,69 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    width: 320px;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Center elements and maintain consistency */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ensure all elements (select, input, button) have the same width */
+select, input, button {
+    width: 90%;  /* Ensures consistency */
+    max-width: 250px;  /* Matches dropdown width */
+    margin-top: 8px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Input field specific styling */
+input {
+    background: #fff;
+    appearance: none; /* Removes default browser styling */
+    -moz-appearance: textfield; /* Hides number input arrows in Firefox */
+}
+
+/* Remove spinner arrows in number input fields for Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Button styling */
+button {
+    background: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Result Styling */
+h4 {
+    text-align: center;
+    margin-top: 10px;
+    color: #333;
+}
+
+#result {
+    font-size: 18px;
+    font-weight: bold;
+    color: #28A745;
+}
